@@ -3,6 +3,7 @@ import './contact.css';
 import React, { useRef, useState } from 'react';
 
 import { MdOutlineEmail } from 'react-icons/md';
+import { BsWhatsapp } from 'react-icons/bs';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -44,6 +45,11 @@ const Contact = () => {
             <h4>Email</h4>
             <h5>loganpoter1004@gmail.com</h5>
             <a href="mailto:loganpoter1004@gmail.com">Send a message</a>
+          </article>
+          <article className="contact__option">
+            <BsWhatsapp className="contact__option-icon" />
+            <h4>WhatsApp</h4>
+            <h5>1 (209) 979-1188</h5>         
           </article>
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
